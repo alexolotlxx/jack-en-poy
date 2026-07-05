@@ -1,0 +1,34 @@
+ROCK-PAPER-SCISSORS in javaScript
+Parameters based on The Odin Project
+
+* This game will be played entirely in the console.
+
+LOGIC:
+- game plays 5 rounds, meaning even if one already wins enough times the game will keep going
+
+
+- functions:
+    - getComputerChoice
+        - randomly return one of the following strings:
+            - "rock"
+            - "paper"
+            - "scissors"
+        - HINT:
+            - use Math.random method to return a random number
+            - test that it works
+    - getHumanChoice
+        - use prompt method to get user input
+        - always assume the user enters a valid choice
+        - test if working
+    - playGame
+        - calling playRound 5 times
+        - acts as the main function
+    - playRound function with 2 parameters: humanChoice and computerChoice
+        - humanChoice is case-insensitive (meaning user can input in uppercase, lowercase, etc.)
+        - round winner is represented as a string value:
+            - "You lose! Paper beats Rock"
+
+- variables
+    - humanScore
+    - computerScore
+        - *** both should be initialized with a value of 0 and are incremented per win
