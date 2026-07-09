@@ -1,0 +1,81 @@
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(/images/background.jpg);
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.title {
+    font-family: "Press Start 2P";
+    font-size: 70px;
+    color: #f8bf18;
+    text-shadow: 5px 5px 5px #000000; /*adds shadow*/
+    text-align: center;
+}
+
+#interface {
+    height: 100px;
+    width: 500px;
+    background-color: black;
+    border: 5px solid #f8bf18;
+}
+
+.container {
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+}
+
+.container button {
+    height: 150px;
+    width: 150px;
+    background-color: #f8bf18;
+    border: 10px solid black;
+}
+
+/* hover property experimental */
+.container button:hover {
+    border: 10px solid white;
+    cursor: pointer;
+}
+
+.container img {
+    height: 80px;
+}
+
+.footer {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: "Press Start 2P";
+    font-size: 25px;
+    color: #f8bf18;
+    text-shadow: 5px 5px 5px #000000;
+}
+
+.copyright {
+    font-family: "Press Start 2P";
+    font-size: 10px;
+    color: #f8bf18;
+    text-shadow: 5px 5px 5px #000000;
+    padding: 0px;
+}
