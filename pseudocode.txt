@@ -1,5 +1,7 @@
 PSEUDOCODE
 
+Doesnt include pseudocode 
+
 // 1. getComputerChoice function
 GET computer choice
 

@@ -5,22 +5,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rock-Paper-Scissors</title>
         <link rel="stylesheet" href="styles.css">
-        <!-- <script src="rock-paper-scissors.js" defer></script> -->
+        <script src="rock-paper-scissors.js" defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Press+Start+2P&display=swap" rel="stylesheet">
     </head>
     <body>
+        <p class="tagline">Your nostalgic Filipino game</p>
         <h1 class="title">JACK EN POY!</h1>
-        <div id="interface"></div>
+        <h2 id="round-indicator">Round 1</h2>
+        <div id="game-screen">
+            <p id="upper-text">MAKE A MOVE!</p>
+            <p id="bottom-text">Bot has chosen its move.</p>
+        </div>
         <div class="container">  
             <button id="rock"><img src="/images/rock.png"></button>
             <button id="paper"><img src="/images/paper.png"></button>
             <button id="scissors"><img src="/images/scissors.png"></button>
         </div>
         <div class="footer">
-            <p class="user-score">Your Score: 0</p>
-            <p class="user-score">Bot's Score: 0</p>
+            <p id="user-score" class="score user-score">Your Score: 0</p>
+            <p id="bot-score" class="score bot-score">Bot's Score: 0</p>
         </div>
         <p class="copyright">Copyright 2026 admlegaspi</p>
     </body>

@@ -20,7 +20,16 @@ body {
     box-sizing: border-box;
 }
 
+#round-indicator {
+    font-family: "Press Start 2P";
+    font-size:20px;
+    color: #f8bf18;
+    text-shadow: 5px 5px 5px #000000;
+    padding: 0px;
+}
+
 .title {
+    margin: 20px 50px 20px;
     font-family: "Press Start 2P";
     font-size: 70px;
     color: #f8bf18;
@@ -28,11 +37,31 @@ body {
     text-align: center;
 }
 
-#interface {
+#game-screen {
     height: 100px;
-    width: 500px;
+    width: 620px;
     background-color: black;
     border: 5px solid #f8bf18;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#upper-text, #bottom-text {
+    margin: 0px;
+    color: white;
+    font-family: "Press Start 2P";
+    font-size: 18px;
+    text-align: center;
+}
+
+.winner-indicator {
+    color: white;
+    font-family: "Press Start 2P";
+    font-size: 20px;
 }
 
 .container {
@@ -48,6 +77,7 @@ body {
     width: 150px;
     background-color: #f8bf18;
     border: 10px solid black;
+    border-radius: 100px;
 }
 
 /* hover property experimental */
@@ -66,15 +96,16 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    min-width: 100px;
     font-family: "Press Start 2P";
     font-size: 25px;
     color: #f8bf18;
     text-shadow: 5px 5px 5px #000000;
 }
 
-.copyright {
+.copyright, .tagline {
     font-family: "Press Start 2P";
-    font-size: 10px;
+    font-size: 12px;
     color: #f8bf18;
     text-shadow: 5px 5px 5px #000000;
     padding: 0px;
