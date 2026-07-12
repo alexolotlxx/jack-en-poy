@@ -82,7 +82,7 @@ body {
 
 /* hover property experimental */
 .container button:hover {
-    border: 10px solid white;
+    background-color: white;
     cursor: pointer;
 }
 
@@ -109,4 +109,9 @@ body {
     color: #f8bf18;
     text-shadow: 5px 5px 5px #000000;
     padding: 0px;
+}
+
+.github {
+    height: 27px;
+    margin: 0px 0px -5px 15px;
 }

@@ -1,6 +1,6 @@
 PSEUDOCODE
 
-Doesnt include pseudocode 
+Doesnt include pseudocode for the complete project with UI, only the console logs
 
 // 1. getComputerChoice function
 GET computer choice
