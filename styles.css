@@ -72,7 +72,17 @@ body {
     gap: 100px;
 }
 
-.container button {
+.start-button {
+    height: 100px;
+    width: 300px;
+    background-color: #f8bf18;
+    border: 10px solid black;
+    border-radius: 100px;
+    font-family: "Press Start 2P";
+    font-size: 25px;
+}
+
+.three-buttons {
     height: 150px;
     width: 150px;
     background-color: #f8bf18;
