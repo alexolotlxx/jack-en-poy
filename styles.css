@@ -29,7 +29,7 @@ body {
 }
 
 .title {
-    margin: 20px 50px 20px;
+    margin: 20px 50px 0px;
     font-family: "Press Start 2P";
     font-size: 70px;
     color: #f8bf18;
@@ -38,19 +38,20 @@ body {
 }
 
 #game-screen {
-    height: 100px;
+    margin: 0px 0px 35px;
+    height: 200px;
     width: 620px;
     background-color: black;
     border: 5px solid #f8bf18;
-    border-radius: 100px;
+    border-radius: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
-#upper-text, #bottom-text {
+#upper-text, #middle-text, #bottom-text {
     margin: 0px;
     color: white;
     font-family: "Press Start 2P";
@@ -65,6 +66,7 @@ body {
 }
 
 .container {
+    margin: -50px;
     height: 250px;
     display: flex;
     justify-content: space-around;
@@ -114,11 +116,12 @@ body {
 }
 
 .copyright, .tagline {
+    margin: 0px;
+    padding: 0px;
     font-family: "Press Start 2P";
     font-size: 12px;
     color: #f8bf18;
     text-shadow: 5px 5px 5px #000000;
-    padding: 0px;
 }
 
 .github {
