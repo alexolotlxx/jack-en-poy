@@ -3,6 +3,7 @@ let round = 1,
     botScore = 0,
     computerChoice;
 
+// getting references
 const gameScreen = document.querySelector("#game-screen")
 const upperText = document.querySelector("#upper-text")
 const middleText = document.querySelector("#middle-text")
@@ -17,14 +18,17 @@ const rockBtn = document.createElement("button");
 const paperBtn = document.createElement("button");
 const scissorsBtn = document.createElement("button");
 
+// sets up the images for the buttons
 const rockImg = document.createElement("img");
 const paperImg = document.createElement("img");
 const scissorsImg = document.createElement("img");
 
+// linking the images to variables
 rockImg.src = "images/rock.png"
 paperImg.src = "images/paper.png"
 scissorsImg.src = "images/scissors.png"
 
+// adding a class to each button
 rockBtn.classList.add("three-buttons")
 paperBtn.classList.add("three-buttons")
 scissorsBtn.classList.add("three-buttons")
@@ -67,7 +71,8 @@ function playRound(humanChoice, computerChoice) {
     console.log(`Bot picked ${computerChoice}`);
     console.log(`user picked ${humanChoice}`);
     middleText.textContent = `You: ${humanChoice}` + "   " + `Bot: ${computerChoice}`;
- 
+
+
     if ((humanChoice === "ROCK" && computerChoice === "SCISSORS") || 
         (humanChoice === "PAPER" && computerChoice === "ROCK") || 
         (humanChoice === "SCISSORS" && computerChoice === "PAPER")) {
@@ -127,21 +132,20 @@ function displayWinner() {
 
 startBtn.addEventListener("click", initGame);
 
-rockBtn.addEventListener("click", (e) => {
+container.addEventListener("click", (e) => {
     computerChoice = getComputerChoice();
     e.stopPropagation();
+})
+
+rockBtn.addEventListener("click", (e) => {
     playRound("ROCK", computerChoice);
 });
 
-paperBtn.addEventListener("click", (e) => {
-    computerChoice = getComputerChoice();
-    e.stopPropagation();
+paperBtn.addEventListener("click", (e) => {;
     playRound("PAPER", computerChoice);
 });
 
 scissorsBtn.addEventListener("click", (e) => {
-    computerChoice = getComputerChoice();
-    e.stopPropagation();
     playRound("SCISSORS", computerChoice);
 });
 
