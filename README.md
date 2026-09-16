@@ -1,3 +1,1 @@
-# Rock Paper Scissors
-
-for fun
+bato papel gunting (for fun lng)
